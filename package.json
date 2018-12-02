@@ -1,0 +1,31 @@
+{
+  "name": "petsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "babel-loader": "^8.0.4",
+    "webpack": "^4.24.0",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "aos": "^2.3.4",
+    "jquery": "^3.3.1",
+    "lightbox2": "^2.10.0",
+    "slick-carousel": "^1.8.1",
+    "smooth-scroll": "^14.2.1",
+    "svg4everybody": "^2.1.9",
+    "tabslet": "^1.7.3"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "pages": "git subtree push --prefix dist origin gh-pages"
+  }
+}

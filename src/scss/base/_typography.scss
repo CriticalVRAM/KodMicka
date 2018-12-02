@@ -1,0 +1,61 @@
+/* josefin-sans-300 - latin-ext */
+@font-face {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Josefin Sans Light'), local('JosefinSans-Light'),
+        url('assets/fonts/josefin-sans-v12-latin-ext-300.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('assets/fonts/josefin-sans-v12-latin-ext-300.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* josefin-sans-regular - latin-ext */
+@font-face {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Josefin Sans Regular'), local('JosefinSans-Regular'),
+        url('assets/fonts/josefin-sans-v12-latin-ext-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('assets/fonts/josefin-sans-v12-latin-ext-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* amatic-sc-regular - latin-ext */
+@font-face {
+    font-family: 'Amatic SC';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Amatic SC Regular'), local('AmaticSC-Regular'),
+        url('assets/fonts/amatic-sc-v11-latin-ext-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('assets/fonts/amatic-sc-v11-latin-ext-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+$font-heading: "Amatic SC";
+$font: "Josefin Sans";
+// Fallback:  ,"Lucida Grande", Tahoma, Sans-Serif;
+
+body {
+    font-family: $font;
+    padding: 50rem;
+    background-color: black;
+}
+
+h1 {
+    font-family: $font-heading;
+    font-size: 4.8rem;
+    line-height: 1.05em;
+
+    color: $color-primary-0;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.375em;
+}
