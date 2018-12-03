@@ -1,2 +1,6 @@
 require('slick-carousel')
-console.log('Face the fear build the future')
+
+
+$(document).ready(function () {
+  $('.about__slick').slick()
+})

@@ -39,23 +39,30 @@ $font-heading: "Amatic SC";
 $font: "Josefin Sans";
 // Fallback:  ,"Lucida Grande", Tahoma, Sans-Serif;
 
-body {
-    font-family: $font;
-    padding: 50rem;
-    background-color: black;
-}
-
 h1 {
     font-family: $font-heading;
     font-size: 4.8rem;
     line-height: 1.05em;
-
-    color: $color-primary-0;
-    margin: 0;
-    margin-bottom: 1rem;
+    margin-top: 0;
+    border-bottom: 3px solid $color-secondary-0;
+    padding: 0 3rem;
 }
 
-p {
+.h2 {
+    font-family: $font-heading;
+    font-size: 3.6rem;
+    line-height: 1.25em;
+    &__about {
+
+    }
+}
+
+.p {
+    font-family: $font;
     font-size: 1.6rem;
     line-height: 1.375em;
+
+    &__header {
+        margin-bottom: 1rem;
+    }
 }

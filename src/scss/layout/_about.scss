@@ -1,0 +1,17 @@
+.about {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    &__textbox {
+        grid-column: 1;
+    }
+    
+    &__box {
+        grid-column: 2;
+    }
+
+    &__slick {
+        width: 100%;
+    }
+}
