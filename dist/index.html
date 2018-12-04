@@ -6,8 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Pet</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="bundle.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <!-- Bing Maps -->
+    <script type='text/javascript'>
+        var map;
+        function GetMap() {
+            map = new Microsoft.Maps.Map('#myMap', {
+                center: new Microsoft.Maps.Location(39.824647, -99.524267),
+                mapTypeId: Microsoft.Maps.MapTypeId.aerial,
+                zoom: 4
+            });
+            //Add your post map load code here.
+        }
+    </script>
+    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=ApiHbsTObRv-vCF8Vbav3Ee9ZFutHwNvkhtp3AUS--3eEBTJZZwZNE1GUyBJzZlc'
+    async defer></script>
 </head>
 
 <body>
@@ -127,6 +140,30 @@
                 </div>
             </li>
         </ul>
+    </section>
+
+    <section class="contact">
+        <div id="myMap" class="contact__map" style='position:relative;width:600px;height:400px;'></div>
+        <div class="contact__box">
+            <h2 class="contact__header">Contact</h2>
+            <p class="contact__number">062-342010</p>
+            <p class="contact__p">Ljube Stojanovica 24</p>
+            <p class="contact__p">Radnim danima: 8:00-23:00</p>
+            <p class="contact__p">Nedeljom ne radimo</p>
+            <div class="contact__social">
+                <a href="https://www.facebook.com/sisanjebeograd/">
+                    <svg class="contact__icon contact__icon--facebook">
+                        <use href="assets/components/sprites.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/kod_micka/">
+                    <svg class="contact__icon contact__icon--instagram">
+                        <use href="assets/components/sprites.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <script src="bundle.js"></script>
     </section>
 </body>
 
