@@ -1,0 +1,11 @@
+.footer {
+    padding: 1rem 6rem;
+    background-color: $primary-text-color;
+    text-align: center;
+    &__copy {
+        color: $secondary-text-color
+    }
+    &__link {
+        text-decoration: none;
+    }
+}

@@ -7,6 +7,7 @@
     background-color: $color-primary-2;
     border: 5px solid $color-secondary-0;
     
+
     &__list {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
@@ -16,8 +17,6 @@
 
         list-style: none;
     }
-
-
     &__logo {
         width: 8rem;
         height: auto;
@@ -45,9 +44,10 @@
         line-height: 1.375em;
         text-decoration: none;
         color: black;
+        outline: none;
         transition: .3s;
         &:hover {
-            transform: scale(1.1);
+            font-size: 2rem;
         }
     }
     &__phone {

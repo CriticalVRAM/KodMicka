@@ -12,11 +12,17 @@
         var map;
         function GetMap() {
             map = new Microsoft.Maps.Map('#myMap', {
-                center: new Microsoft.Maps.Location(39.824647, -99.524267),
+                center: new Microsoft.Maps.Location(44.813358, 20.478392),
                 mapTypeId: Microsoft.Maps.MapTypeId.aerial,
-                zoom: 4
+                zoom: 17
             });
-            //Add your post map load code here.
+            var center = map.getCenter();
+            //Create custom Pushpin
+            var pin = new Microsoft.Maps.Pushpin(center, {
+            title: 'Kod Mićka',
+            });
+            //Add the pushpin to the map
+            map.entities.push(pin);
         }
     </script>
     <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=ApiHbsTObRv-vCF8Vbav3Ee9ZFutHwNvkhtp3AUS--3eEBTJZZwZNE1GUyBJzZlc'
@@ -36,7 +42,7 @@
                 <a class="nav__link" href="#contact">Kontakt</a>
             </li>
 
-            <li class="nav__item nav__item--logo"><img class="nav__logo" src="assets/components/logo-no-bg.png"></li>
+            <li class="nav__item nav__item--logo"><a class="no-out" href="#"><img class="nav__logo" src="assets/components/logo-no-bg.png"></a></li>
             <li class="nav__item">
                 <p class="nav__time">Radno vreme:<br>10:00-21:00<br>Nedeljom neradimo</p>
             </li>
@@ -58,9 +64,9 @@
         </ul>
     </nav>
 
-    <header class="header" id="about">
-        <img class="header__img" src="assets/images/header.jpg" alt="hero">
-        <div class="header__textbox">
+    <header class="header" id="header">
+        <img data-aos="slide-up" class="header__img" src="assets/images/header.jpg" alt="hero">
+        <div data-aos="slide-up" class="header__textbox">
             <div class="header__text">
                 <h1>Hello World</h1>
                 <p class="header__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, praesentium
@@ -78,7 +84,7 @@
     </header>
 
     <section class="about" id="about">
-        <div class="about__textbox">
+        <div data-aos="slide-up" class="about__textbox">
             <h2 class="about__header mb-32">Ljubav za zivotinje</h2>
             <p class="about__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum voluptate rem
                 aspernatur pariatur. Iusto est asperiores possimus et alias, eveniet unde eaque magnam exercitationem
@@ -90,7 +96,7 @@
                 sequi inventore laborum impedit nisi, aut dolores esse est exercitationem quis. Commodi necessitatibus
                 nobis placeat natus quasi velit ipsum.</p>
         </div>
-        <div class="about__slick">
+        <div data-aos="slide-up" class="about__slick">
             <div class="about__slick-slide"><img class="about__slick-image" src="assets/images/header.jpg"></div>
             <div class="about__slick-slide"><img class="about__slick-image" src="assets/images/header.jpg"></div>
             <div class="about__slick-slide"><img class="about__slick-image" src="assets/images/header.jpg"></div>
@@ -164,7 +170,7 @@
         </ul>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div id="myMap" class="contact__map"></div>
         <div class="contact__box">
             <h2 class="contact__header">Contact</h2>
@@ -186,6 +192,10 @@
             </div>
         </div>
     </section>
+
+    <footer class="footer">
+        <p class="footer__copy">©2019 Kod Mićka<br>Made by <a class="footer__link" href="https://github.com/Nani-Sore-0">Uroš Radulović</a></p>
+    </footer>
 
     <script src="bundle.js"></script>
 </body>
