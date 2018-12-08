@@ -8,6 +8,10 @@
 
 html {
     font-size: 62.5%; // 1rem = 10px
+    @include respond(tab-port) {
+        // Media query
+        font-size: 60.5%;
+    }
 }
 
 body {

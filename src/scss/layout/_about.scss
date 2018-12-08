@@ -1,9 +1,18 @@
 .about {
     display: grid;
     grid-template-columns: 50% 50%;
+    @include respond(tab-port) {
+        // Media query
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 100%;
+    }
     grid-column-gap: 4rem;
 
     padding: 10rem 6rem;
+    @include respond(phone) {
+        // Media query
+        padding: 8rem 4rem;
+    }
     padding-right: 8rem;
     background-image: linear-gradient(rgba($color-primary-1, 0.9), rgba($color-primary-1, 0.9)), url('assets/images/bg1.jpg');
     background-attachment: fixed;
@@ -13,11 +22,21 @@
 
     &__textbox {
         grid-column: 1;
+        @include respond(tab-port) {
+            // Media query
+            grid-column: 1;
+            grid-row: 2;
+        }
         display: flex;
         flex-direction: column;
     }
     &__box {
         grid-column: 2;
+        @include respond(tab-port) {
+            // Media query
+            grid-column: 1;
+            grid-row: 1;
+        }
     }
     &__header {
         align-self: center;

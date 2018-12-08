@@ -3,7 +3,17 @@
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 4rem;
 
+    @include respond(tab-port) {
+        // Media query
+        grid-template-rows: 1fr auto;
+        grid-template-columns: auto;
+    }
+
     padding: 10rem 6rem;
+    @include respond(phone) {
+        // Media query
+        padding: 8rem 4rem;
+    }
     background-color: $color-primary-0;
 
     &__img {

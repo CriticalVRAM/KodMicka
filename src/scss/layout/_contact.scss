@@ -1,7 +1,19 @@
 .contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    @include respond(tab-port) {
+        // Media query
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-row-gap: 4rem;
+    }
+
     padding: 10rem 6rem;
+    @include respond(phone) {
+        // Media query
+        padding: 8rem 4rem;
+    }
+
     background-image: linear-gradient(rgba($color-primary-1, 0.9), rgba($color-primary-1, 0.9)), url('assets/images/bg2.jpg');
     background-attachment: fixed;
     background-size: cover;
