@@ -2,10 +2,15 @@
     width: 100%;
     display: grid;
     align-items: center;
-    justify-items: center;
+    // justify-items: center;
     grid-column-gap: 4rem;
     grid-template-columns: 1fr minmax(0, 1fr);
-    grid-template-areas: "heading heading" "textbox slick";
+    grid-template-rows: auto auto;
+    @include respond(tab-port) {
+        // Media query
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: auto auto auto;
+    }
 
     // Style
     @include sec-padding();
@@ -17,30 +22,48 @@
 
     &__item {
         &--heading {
-            grid-area: heading;
+            justify-self: center;
+            grid-column: 1 / 3;
+            grid-row: 1;
+            @include respond(tab-port) {
+                // Media query
+                grid-column: 1;
+                grid-row: 1;
+            }
 
-            align-self: center;
             margin-bottom: 3.2rem;
             padding: 0 3rem;
             border-bottom: 3px solid $color-secondary-0;
         }
         &--textbox {
-            grid-area: textbox;
+            grid-column: 1;
+            grid-row: 2;
+            @include respond(tab-port) {
+                // Media query
+                grid-column: 1;
+                grid-row: 3;
+            }
         }
         &--slick {
-            grid-area: slick;
+            grid-column: 2;
+            grid-row: 2;
+            @include respond(tab-port) {
+                // Media query
+                grid-column: 1;
+                grid-row: 2;
+            }
         }
     }
 
 
 
     &__slick-image {
-        width: 500px;
+        width: 100%;
         height: auto;
     }
     &__icon {
-        width: 80px;
-        height: 80px;
+        width: 15%;
+        height: 15%;
         background-color: $color-secondary-0;
         padding: .5rem;
         border-radius: 7px;
