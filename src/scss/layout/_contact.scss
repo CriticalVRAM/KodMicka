@@ -8,12 +8,8 @@
         grid-row-gap: 4rem;
     }
 
-    padding: 10rem 6rem;
-    @include respond(phone) {
-        // Media query
-        padding: 8rem 4rem;
-    }
-
+    // Style
+    @include sec-padding();
     background-image: linear-gradient(rgba($color-primary-1, 0.9), rgba($color-primary-1, 0.9)), url('assets/images/bg2.jpg');
     background-attachment: fixed;
     background-size: cover;
@@ -22,6 +18,14 @@
 
 
     &__box {
+        grid-column: 2;
+        grid-row: 1;
+        @include respond(tab-port) {
+            // Media query
+            grid-column: 1;
+            grid-row: 1;
+        }
+
         display: grid;
         grid-auto-rows: min-content;
         justify-items: center;
@@ -32,6 +36,14 @@
         position: relative;
         width: 100%;
         height: 450px;
+        grid-column: 1;
+        grid-row: 1;
+        @include respond(tab-port) {
+            // Media query
+            grid-column: 1;
+            grid-row: 2;
+            height: 300px;
+        }
     }
 
     &__header {
