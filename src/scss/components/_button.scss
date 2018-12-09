@@ -5,12 +5,15 @@
     transition: .3s;
 
     &__big {
-        background-color: $color-secondary-0;
-        padding: 1rem 4rem;
-        color: black;
-        font-size: 3.6rem;
         margin-top: 3.2rem;
+        padding: 1rem 4rem;
+
+        // Style
+        font-size: 3.6rem;
+        outline: none;
         border-radius: 100px;
+        color: black;
+        background-color: $color-secondary-0;
         &:hover {
             transform: scale(1.1)
         }

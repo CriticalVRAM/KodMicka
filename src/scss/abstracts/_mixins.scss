@@ -23,3 +23,22 @@
         @media screen and (-webkit-min-device-pixel-ratio:0) { @content }; // query for chrome only
     }
 }
+
+
+// Other Mixnis
+
+@mixin sec-padding {
+    padding: 10rem 6rem;
+    @include respond(tab-land) {
+        // Media query
+        padding: 8rem 4rem;
+        @include respond(tab-port) {
+            // Media query
+            padding: 6rem 3rem;
+            @include respond(phone) {
+                // Media query
+                padding: 4rem 2rem;
+            }
+        }
+    }
+}
