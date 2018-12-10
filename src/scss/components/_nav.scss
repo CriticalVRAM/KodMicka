@@ -98,6 +98,10 @@
                 }
             }
         }
+        @include respond(ie11) {
+            // Media query
+            align-self: center;
+        }
     }
 
     // Style
