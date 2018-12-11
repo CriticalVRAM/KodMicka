@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="sr" dir="ltr">
 
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Pet</title>
+    <title>Kod Mićka</title>
+    <meta name="description" content="Description of the page less than 150 characters">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <!-- Bing Maps -->
-    <script type='text/javascript'>
+    <script>
         var map;
         function GetMap() {
             map = new Microsoft.Maps.Map('#myMap', {
@@ -25,14 +26,13 @@
             map.entities.push(pin);
         }
     </script>
-    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=ApiHbsTObRv-vCF8Vbav3Ee9ZFutHwNvkhtp3AUS--3eEBTJZZwZNE1GUyBJzZlc'
-        async defer></script>
+    <script src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=ApiHbsTObRv-vCF8Vbav3Ee9ZFutHwNvkhtp3AUS--3eEBTJZZwZNE1GUyBJzZlc' async defer></script>
 </head>
 
 <body>
     <nav class="nav">
         <ul class="nav__list">
-            <li class="nav__item nav__item--1 nav__item--logo"><a class="no-out" href="#"><img class="nav__logo" src="assets/components/logo-no-bg.png"></a></li>
+            <li class="nav__item nav__item--1 nav__item--logo"><a class="no-out" href="#"><img alt="" class="nav__logo" src="assets/components/logo-no-bg.png"></a></li>
             <li class="nav__item nav__item--2">
                 <a class="nav__link" href="#about">O nama</a>
             </li>
@@ -43,7 +43,7 @@
                 <a class="nav__link" href="#contact">Kontakt</a>
             </li>
             <li class="nav__item nav__item--5">
-                <p class="nav__time">10:00-21:00<br>Nedeljom ne radimo</p>
+                <p class="nav__time">10:00-18:00<br>Nedeljom ne radimo</p>
             </li>
             <li class="nav__item nav__item--social nav__item--6">
                 <a class="tdn" href="https://www.facebook.com/sisanjebeograd/">
@@ -102,9 +102,15 @@
             </p>
         </div>
         <div class="about__item about__item--slick">
-            <div class="about__slick-slide"><img class="about__slick-image" src="assets/images/header.jpg"></div>
-            <div class="about__slick-slide"><img class="about__slick-image" src="assets/images/header.jpg"></div>
-            <div class="about__slick-slide"><img class="about__slick-image" src="assets/images/header.jpg"></div>
+            <div class="about__slick-slide"><img src="assets/images/about/about1.jpeg" alt="about image 1" class="about__slick-image"></div>
+            <div class="about__slick-slide"><img src="assets/images/about/about2.jpeg" alt="about image 2" class="about__slick-image"></div>
+            <div class="about__slick-slide"><img src="assets/images/about/about3.jpeg" alt="about image 3" class="about__slick-image"></div>
+            <div class="about__slick-slide"><img src="assets/images/about/about4.jpeg" alt="about image 4" class="about__slick-image"></div>
+            <div class="about__slick-slide"><img src="assets/images/about/about5.jpeg" alt="about image 5" class="about__slick-image"></div>
+            <div class="about__slick-slide"><img src="assets/images/about/about6.jpeg" alt="about image 6" class="about__slick-image"></div>
+            <div class="about__slick-slide"><img src="assets/images/about/about7.jpeg" alt="about image 7" class="about__slick-image"></div>
+            <div class="about__slick-slide"><img src="assets/images/about/about8.jpeg" alt="about image 8" class="about__slick-image"></div>
+            <div class="about__slick-slide"><img src="assets/images/about/about9.jpeg" alt="about image 9" class="about__slick-image"></div>
         </div>
     </section>
 
@@ -168,8 +174,8 @@
         <div class="contact__box">
             <h2 class="contact__header">Contact</h2>
             <p class="contact__number">062-342010</p>
-            <p class="contact__p">Ljube Stojanovica 24</p>
-            <p class="contact__p">Radnim danima: 8:00-23:00</p>
+            <p class="contact__p">Cvijićeva 63</p>
+            <p class="contact__p">Radnim danima: 10:00-18:00</p>
             <p class="contact__p">Nedeljom ne radimo</p>
             <div class="contact__social">
                 <a class="tdn" href="https://www.facebook.com/sisanjebeograd/">
