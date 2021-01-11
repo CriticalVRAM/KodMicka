@@ -2,4 +2,4 @@
 
 ## Pet grooming webstie
 
-### [Website demo](https://nani-sore-0.github.io/KodMicka/)
+### [Website demo](https://nanibyte.github.io/KodMicka/)
